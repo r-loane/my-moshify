@@ -532,7 +532,7 @@ a {
 /* Testimonials */
 
 .testimonial {
-  padding: 3rem;
+  padding-right: 3rem;
 }
 
 .testimonial__image {
@@ -655,6 +655,7 @@ a {
 
 .block__header {
   text-align: center;
+  margin-bottom: 4rem;
 }
 .block__heading {
   margin-top: 0;
