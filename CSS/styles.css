@@ -15,7 +15,7 @@
   box-sizing: border-box;
 }
 
-.containter {
+.container {
   max-width: 1140px;
   margin: 0 auto;
 }
@@ -231,7 +231,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -296,6 +296,7 @@ a {
 @media screen and (min-width: 1024px) {
   .button {
     font-size: 1.5rem;
+    /* padding: 3rem 2vw; */
   }
 }
 
@@ -324,6 +325,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .button {
@@ -428,7 +430,7 @@ a {
   transform: scale(1.15);
 }
 
-@media scree and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .plan__name {
     font-size: 1.4rem;
   }
@@ -540,14 +542,22 @@ a {
 /* Testimonials */
 
 .testimonial {
-  padding-right: 3rem;
 }
 
 .testimonial__image {
   position: relative;
   overflow: visible;
-  margin: 0.5rem;
+  margin: 3.5rem;
   /* not sure if this margin is correct ^^^ */
+}
+
+@media screen and (max-width: 320px) {
+  .testimonial {
+    padding-right: 0rem;
+  }
+  .testimonial__image {
+    margin: 5.5rem;
+  }
 }
 
 .testimonial__image > img {
@@ -788,8 +798,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 200;
@@ -819,7 +830,7 @@ a {
 
 .feature {
   gap: 4rem 2rem;
-  margin-top: 12rem;
+  margin-top: 7rem;
 }
 
 .feature__heading {
@@ -875,6 +886,7 @@ a {
 
 .footer {
   background: #232323;
+  padding-top: 10rem;
 }
 
 .footer__section {
@@ -984,4 +996,10 @@ a {
     align-self: flex-start;
     text-align: center;
   } */
+}
+
+/* Sign-up Callout */
+
+.callout-signup {
+  transform: translateY(5rem);
 }
