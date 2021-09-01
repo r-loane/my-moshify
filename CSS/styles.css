@@ -541,6 +541,9 @@ a {
 
 /* Testimonials */
 
+.testimonial {
+}
+
 .testimonial__image {
   position: relative;
   overflow: visible;
