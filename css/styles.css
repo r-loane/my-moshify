@@ -511,6 +511,9 @@ a {
 @media screen and (min-width: 1024px) {
   .quote {
     font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .quote__author {
@@ -659,7 +662,7 @@ a {
 
 .block {
   --pading-verticle: 6rem;
-  padding: var(--pading-verticle) 2rem;
+  padding: var(--pading-verticle) 2rem 3rem 2rem;
 }
 
 .block__header {
